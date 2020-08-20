@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build && npm run build:copy:ssr",
-    "build:copy:ssr": "rimraf functions/ssr && mkdirp functions/ssr && cp -R .nuxt/dist functions/ssr/dist",
-    "start": "nuxt start",
-    "generate": "nuxt-ts generate"
+    "build": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
