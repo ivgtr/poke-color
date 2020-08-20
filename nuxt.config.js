@@ -1,5 +1,6 @@
 
 export default {
+  srcDir: 'src/',
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -45,10 +46,23 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/typescript-build',
+
+    [
+      '@nuxt/typescript-build',
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true
+      }
+    ],
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
+  tailwindcss: {
+    configPath: '../tailwind.config.js',
+    cssPath: '~/assets/styles/css/tailwind.css',
+    exposeConfig: false
+  },
   /*
   ** Nuxt.js modules
   */
@@ -60,5 +74,8 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  router: {
+    base: '/'
   }
 }
