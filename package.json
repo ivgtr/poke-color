@@ -1,20 +1,37 @@
 {
   "name": "poke-color",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "prebuild": "npm run lint",
     "build": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "lint": "eslint ./src/*/*.vue"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "ress": "^3.0.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",
     "@nuxt/typescript-build": "^2.0.2",
-    "@nuxtjs/tailwindcss": "^2.1.0"
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^2.1.0",
+    "eslint": "^7.7.0",
+    "eslint-config-metamo": "^0.2.10",
+    "husky": "^4.2.5",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-metamo": "^0.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ./src/*/*.vue"
+    }
   }
 }
