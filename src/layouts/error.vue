@@ -1,24 +1,12 @@
 <template>
-  <main class="main">
-    <div>
-      <p>popoopo</p>
-    </div>
+  <main class="main rounded flex items-center justify-center">
+    <p>404 not found</p>
   </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
-export default Vue.extend({
-  mounted() {
-    this.test()
-  },
-  methods: {
-    test(): void {
-      console.log('test')
-    }
-  }
-})
+export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>

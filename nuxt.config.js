@@ -60,6 +60,12 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources'],
+  styleResources: {
+    scss: ['~/assets/styles/scss/functions.scss']
+  },
+  generate: {
+    fallback: true
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
