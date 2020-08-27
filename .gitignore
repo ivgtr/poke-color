@@ -91,4 +91,4 @@ sw.*
 *.swp
 
 # localize data
-/src/localize/pokemon/*.json
+# /src/localize/pokemon/*.json
