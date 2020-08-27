@@ -1,5 +1,5 @@
 const path = require('path')
-const csv = require('csvtojson')
+const fs = require('fs')
 const { google } = require('googleapis')
 const sheets = google.sheets('v4')
 
@@ -17,14 +17,33 @@ async function execAPI(spreadsheetId, range) {
     range
   }
 
-  sheets.spreadsheets.values.get(apiOptions, (err, res) => {
-    if (!err) {
-      const result = res.data.values
-      csv().on(result, (data) => {
-        // data is a buffer object
-        const jsonStr = data.toString('utf8')
-        console.log(jsonStr)
-      })
+  sheets.spreadsheets.values.get(apiOptions, async (err, res) => {
+    try {
+      if (!err) {
+        const data = res.data.values
+        const head = data.shift()
+
+        const result = []
+
+        await Promise.all(
+          data.map(async (i) => {
+            const cache = {}
+            cache[head[0]] = i[0]
+            cache[head[1]] = i[1]
+            cache[head[2]] = i[2]
+            cache[head[3]] = i[3]
+            await result.push(cache)
+          })
+        )
+
+        const output = JSON.stringify(result, null, ' ')
+
+        fs.writeFile('./src/localize/pokemon/ja.json', output, (err) => {
+          if (err) console.log(`error!::${err}`)
+        })
+      }
+    } catch (err) {
+      console.log(err)
     }
   })
 }
