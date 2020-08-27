@@ -1,15 +1,32 @@
 <template>
-  <main class="main">
-    <div>
-      <p>popoopo</p>
+  <div class="wrapper">
+    <h1 class="text-center text-5xl font-bold mt-12">poke color</h1>
+    <div class="colors grid grid-cols-5 gap-4 mt-12">
+      <div
+        v-for="p in pokemon"
+        :key="p.id"
+        class="pokeomn inline-block rounded-md h-32 w-32"
+        :style="{ backgroundColor: p.Color }"
+      >
+        <p>
+          {{ p.Name }}
+        </p>
+      </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
+import pokemon from '~/localize/pokemon/ja.json'
+
 export default Vue.extend({
+  data() {
+    return {
+      pokemon
+    }
+  },
   mounted() {
     this.test()
   },
@@ -22,9 +39,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.main {
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  background: #fcfcf3;
+.wrapper {
 }
 </style>

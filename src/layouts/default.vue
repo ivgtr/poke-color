@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <main
+    class="root relative w-full grid items-center justify-center overflow-hidden"
+  >
     <Nuxt />
-  </div>
+  </main>
 </template>
 
 <style>
