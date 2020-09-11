@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --port 24340",
     "config": "node functions/createZukan.js",
     "prebuild": "npm run lint",
     "build": "nuxt generate",
     "start": "nuxt start",
+    "proxy": "ngrok http 24340 -hostname=pokecolor.jp.ngrok.io -region jp",
     "lint": "eslint ./src/*/*.vue"
   },
   "dependencies": {
@@ -17,7 +18,8 @@
     "nuxt": "^2.14.0",
     "nuxt-clipboard2": "^0.2.1",
     "portal-vue": "^2.1.7",
-    "ress": "^3.0.0"
+    "ress": "^3.0.0",
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

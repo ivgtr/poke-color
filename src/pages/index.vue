@@ -1,6 +1,6 @@
 <template>
   <main class="wrapper relative z-10 mx-10">
-    <h1 class="text-center text-5xl font-bold mt-12">poke color</h1>
+    <Title />
     <Colors />
     <portal-target name="notification" />
   </main>

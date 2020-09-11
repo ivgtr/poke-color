@@ -63,10 +63,16 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     'nuxt-clipboard2',
-    'portal-vue/nuxt'
+    'portal-vue/nuxt',
+    'nuxt-webfontloader'
   ],
   styleResources: {
     scss: ['~/assets/styles/scss/functions.scss']
+  },
+  webfontloader: {
+    google: {
+      families: ['Passion+One:wght@700&display=swap']
+    }
   },
   generate: {
     fallback: true
