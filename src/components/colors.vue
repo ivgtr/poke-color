@@ -89,7 +89,6 @@ export default Vue.extend({
   mounted() {},
   methods: {
     colorPreview(color: string): void {
-      console.log(color)
       this.preview = color
     },
     async onCopy(colorCode: string): Promise<void> {
