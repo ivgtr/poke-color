@@ -3,8 +3,8 @@
     <div
       v-for="p in pokemon"
       :key="p.id"
-      class="container inline-block rounded-md h-32 w-32 overflow-hidden bg-white cursor-pointer mx-auto mt-2 text-center"
-      @mouseover="colorPreview(p.Color)"
+      class="container inline-block rounded-md h-32 w-32 overflow-hidden bg-white cursor-pointer mx-auto mt-4 text-center"
+      @mouseover.self="colorPreview(p.Color)"
       @mouseleave="colorPreview('#fff')"
       @click.self="onCopy(p.Color)"
     >
@@ -12,11 +12,13 @@
         <span
           class="inline-block w-full"
           :style="{ backgroundColor: p.Color }"
+          @mouseover.self="colorPreview(p.Color)"
           @click="onCopy(p.Color)"
         ></span>
         <span
           class="inline-block w-full"
           :style="{ backgroundColor: p.SubColor }"
+          @mouseover.self="colorPreview(p.SubColor)"
           @click="onCopy(p.SubColor)"
         ></span>
       </div>
@@ -31,7 +33,7 @@
     </div>
     <portal to="notification">
       <transition name="fade">
-        <notification v-if="open" :color="color" :msg="msg" />
+        <Notification v-if="open" :color="color" :msg="msg" />
       </transition>
     </portal>
     <portal to="backgroundColor">
