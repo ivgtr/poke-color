@@ -1,20 +1,9 @@
-# poke-color
+# PokeColor
+[![Twitter Follow](https://img.shields.io/twitter/follow/mawaru_hana?style=social)](https://twitter.com/mawaru_hana) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![CI](https://github.com/ivgtr/poke-color/workflows/CI/badge.svg)](https://github.com/ivgtr/poke-color)  
 
-## Build Setup
+Have you ever wanted to use that Pokémon color?
+Feel free to get the color code of your favorite Pokémon at this site.  
 
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## License
+MIT ©[ivgtr](https://github.com/ivgtr)  
+Created by ©[ivgtr](https://github.com/ivgtr), but Pokémon and Pokémon character names are trademarks of Nintendo.
