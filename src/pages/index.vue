@@ -1,5 +1,5 @@
 <template>
-  <main class="wrapper relative z-10 mx-10">
+  <main class="wrapper relative z-10 mx-10 pb-20">
     <Title />
     <Colors />
     <portal-target name="notification" />

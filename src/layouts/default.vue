@@ -1,8 +1,9 @@
 <template>
   <div
-    class="root relative w-full grid items-center justify-center overflow-hidden pb-32"
+    class="root relative w-full grid items-center justify-center overflow-hidden"
   >
     <Nuxt />
+    <Footer />
     <portal-target name="backgroundColor" />
   </div>
 </template>
