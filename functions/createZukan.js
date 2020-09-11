@@ -3,7 +3,7 @@ const fs = require('fs')
 const { google } = require('googleapis')
 const sheets = google.sheets('v4')
 
-execAPI('1Qhnt9UAis46VfZA9I9I4lyJ0z55Oa1UzHJfK94Zr6eo', 'jp!A1:D152')
+execAPI('1Qhnt9UAis46VfZA9I9I4lyJ0z55Oa1UzHJfK94Zr6eo', 'jp!A1:E152')
 
 async function execAPI(spreadsheetId, range) {
   const auth = await google.auth.getClient({
@@ -32,6 +32,7 @@ async function execAPI(spreadsheetId, range) {
             cache[head[1]] = i[1]
             cache[head[2]] = i[2]
             cache[head[3]] = i[3]
+            cache[head[4]] = i[4]
             await result.push(cache)
           })
         )

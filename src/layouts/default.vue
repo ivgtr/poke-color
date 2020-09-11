@@ -1,12 +1,8 @@
 <template>
-  <main
-    class="root relative w-full grid items-center justify-center overflow-hidden"
+  <div
+    class="root relative w-full grid items-center justify-center overflow-hidden pb-32"
   >
     <Nuxt />
-  </main>
+    <portal-target name="backgroundColor" />
+  </div>
 </template>
-
-<style lang="scss" scoped>
-.root {
-}
-</style>

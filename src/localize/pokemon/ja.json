@@ -3,906 +3,1057 @@
   "Number": "1",
   "Name": "フシギダネ",
   "Color": "#8cccb4",
+  "SubColor": "#9ad4b4",
   "Region": "カントー"
  },
  {
   "Number": "2",
   "Name": "フシギソウ",
   "Color": "#4d9fb7",
+  "SubColor": "#f0a3ae",
   "Region": "カントー"
  },
  {
   "Number": "3",
   "Name": "フシギバナ",
   "Color": "#d86979",
+  "SubColor": "#e78c9b",
   "Region": "カントー"
  },
  {
   "Number": "4",
   "Name": "ヒトカゲ",
   "Color": "#e87732",
+  "SubColor": "#f4bc84",
   "Region": "カントー"
  },
  {
   "Number": "5",
   "Name": "リザード",
   "Color": "#ec652c",
+  "SubColor": "#fbde7d",
   "Region": "カントー"
  },
  {
   "Number": "6",
   "Name": "リザードン",
   "Color": "#f49c24",
+  "SubColor": "#fce67d",
   "Region": "カントー"
  },
  {
   "Number": "7",
   "Name": "ゼニガメ",
   "Color": "#64acc4",
+  "SubColor": "#93cce4",
   "Region": "カントー"
  },
  {
   "Number": "8",
   "Name": "カメール",
   "Color": "#6791c4",
+  "SubColor": "#bfe3f3",
   "Region": "カントー"
  },
  {
   "Number": "9",
   "Name": "カメックス",
   "Color": "#658cc4",
+  "SubColor": "#95b9e4",
   "Region": "カントー"
  },
  {
   "Number": "10",
   "Name": "キャタピー",
   "Color": "#de7343",
+  "SubColor": "#f7e595",
   "Region": "カントー"
  },
  {
   "Number": "11",
   "Name": "トランセル",
   "Color": "#84b444",
+  "SubColor": "#c5dd98",
   "Region": "カントー"
  },
  {
   "Number": "12",
   "Name": "バタフリー",
   "Color": "#b65045",
+  "SubColor": "#ecf4fc",
   "Region": "カントー"
  },
  {
   "Number": "13",
   "Name": "ビードル",
   "Color": "#bc9454",
+  "SubColor": "#e4c49e",
   "Region": "カントー"
  },
  {
   "Number": "14",
   "Name": "コクーン",
   "Color": "#c4ac4c",
+  "SubColor": "#f5e38c",
   "Region": "カントー"
  },
  {
   "Number": "15",
   "Name": "スピアー",
   "Color": "#d3ae4b",
+  "SubColor": "#f4dc54",
   "Region": "カントー"
  },
  {
   "Number": "16",
   "Name": "ポッポ",
   "Color": "#a56e25",
+  "SubColor": "#fcf4bb",
   "Region": "カントー"
  },
  {
   "Number": "17",
   "Name": "ピジョン",
   "Color": "#c44c64",
+  "SubColor": "#f1c497",
   "Region": "カントー"
  },
  {
   "Number": "18",
   "Name": "ピジョット",
   "Color": "#e56d44",
+  "SubColor": "#fcdc94",
   "Region": "カントー"
  },
  {
   "Number": "19",
   "Name": "コラッタ",
   "Color": "#b46264",
+  "SubColor": "#e4ccac",
   "Region": "カントー"
  },
  {
   "Number": "20",
   "Name": "ラッタ",
   "Color": "#ac7c34",
+  "SubColor": "#f9e5c2",
   "Region": "カントー"
  },
  {
   "Number": "21",
   "Name": "オニスズメ",
   "Color": "#e47c74",
+  "SubColor": "#e68c84",
   "Region": "カントー"
  },
  {
   "Number": "22",
   "Name": "オニドリル",
   "Color": "#c48c4c",
+  "SubColor": "#e7d3b7",
   "Region": "カントー"
  },
  {
   "Number": "23",
   "Name": "アーボ",
   "Color": "#baa76d",
+  "SubColor": "#e9d68c",
   "Region": "カントー"
  },
  {
   "Number": "24",
   "Name": "アーボック",
-  "Color": "#38c82f",
+  "Color": "#a65965",
+  "SubColor": "#d1a9af",
   "Region": "カントー"
  },
  {
   "Number": "25",
   "Name": "ピカチュウ",
   "Color": "#d0644c",
+  "SubColor": "#fce47c",
   "Region": "カントー"
  },
  {
   "Number": "26",
   "Name": "ライチュウ",
   "Color": "#f3c155",
+  "SubColor": "#fbe47b",
   "Region": "カントー"
  },
  {
   "Number": "27",
   "Name": "サンド",
   "Color": "#ecd474",
+  "SubColor": "#f4d474",
   "Region": "カントー"
  },
  {
   "Number": "28",
   "Name": "サンドパン",
   "Color": "#eecf6c",
+  "SubColor": "#efd78d",
   "Region": "カントー"
  },
  {
   "Number": "29",
   "Name": "ニドラン♀",
   "Color": "#d64e39",
+  "SubColor": "#ccd4ec",
   "Region": "カントー"
  },
  {
   "Number": "30",
   "Name": "ニドリーナ",
   "Color": "#b64330",
+  "SubColor": "#dc8474",
   "Region": "カントー"
  },
  {
   "Number": "31",
   "Name": "ニドクイン",
   "Color": "#6f9dbc",
+  "SubColor": "#8bafcc",
   "Region": "カントー"
  },
  {
   "Number": "32",
   "Name": "ニドラン♂",
   "Color": "#439c94",
+  "SubColor": "#a2d7d2",
   "Region": "カントー"
  },
  {
   "Number": "33",
   "Name": "ニドリーノ",
-  "Color": "#d52b48",
+  "Color": "#a35ca3",
+  "SubColor": "#cfaacf",
   "Region": "カントー"
  },
  {
   "Number": "34",
   "Name": "ニドキング",
-  "Color": "#b6a4a8",
+  "Color": "#a05f9a",
+  "SubColor": "#ceaccb",
   "Region": "カントー"
  },
  {
   "Number": "35",
   "Name": "ピッピ",
-  "Color": "#5f0d0d",
+  "Color": "#eb1414",
+  "SubColor": "#fcdcdc",
   "Region": "カントー"
  },
  {
   "Number": "36",
   "Name": "ピクシー",
-  "Color": "#5f080d",
+  "Color": "#eb4a14",
+  "SubColor": "#fce4dc",
   "Region": "カントー"
  },
  {
   "Number": "37",
   "Name": "ロコン",
   "Color": "#d98345",
+  "SubColor": "#ecac7b",
   "Region": "カントー"
  },
  {
   "Number": "38",
   "Name": "キュウコン",
   "Color": "#e6b242",
+  "SubColor": "#fbf4ab",
   "Region": "カントー"
  },
  {
   "Number": "39",
   "Name": "プリン",
   "Color": "#0d8196",
+  "SubColor": "#fcd9e3",
   "Region": "カントー"
  },
  {
   "Number": "40",
   "Name": "プクリン",
   "Color": "#2094a9",
+  "SubColor": "#fcdde4",
   "Region": "カントー"
  },
  {
   "Number": "41",
   "Name": "ズバット",
   "Color": "#4c85a5",
+  "SubColor": "#76a4c4",
   "Region": "カントー"
  },
  {
   "Number": "42",
   "Name": "ゴルバット",
   "Color": "#3c94bc",
+  "SubColor": "#79accc",
   "Region": "カントー"
  },
  {
   "Number": "43",
   "Name": "ナゾノクサ",
   "Color": "#44a434",
+  "SubColor": "#90c070",
   "Region": "カントー"
  },
  {
   "Number": "44",
   "Name": "クサイハナ",
   "Color": "#c3673b",
+  "SubColor": "#e19670",
   "Region": "カントー"
  },
  {
   "Number": "45",
   "Name": "ラフレシア",
   "Color": "#cc8444",
+  "SubColor": "#f49c8c",
   "Region": "カントー"
  },
  {
   "Number": "46",
   "Name": "パラス",
   "Color": "#eca454",
+  "SubColor": "#f2bc7b",
   "Region": "カントー"
  },
  {
   "Number": "47",
   "Name": "パラセクト",
   "Color": "#e2a811",
+  "SubColor": "#ec9c4d",
   "Region": "カントー"
  },
  {
   "Number": "48",
   "Name": "コンパン",
   "Color": "#bc4c84",
+  "SubColor": "#ec9cc4",
   "Region": "カントー"
  },
  {
   "Number": "49",
   "Name": "モルフォン",
-  "Color": "#2e2e8d",
+  "Color": "#2323dc",
+  "SubColor": "#ececfc",
   "Region": "カントー"
  },
  {
   "Number": "50",
   "Name": "ディグダ",
   "Color": "#c4a384",
+  "SubColor": "#d494bc",
   "Region": "カントー"
  },
  {
   "Number": "51",
   "Name": "ダグトリオ",
   "Color": "#cc8cac",
+  "SubColor": "#cc8cb4",
   "Region": "カントー"
  },
  {
   "Number": "52",
   "Name": "ニャース",
   "Color": "#c49454",
+  "SubColor": "#fcf4dc",
   "Region": "カントー"
  },
  {
   "Number": "53",
   "Name": "ペルシアン",
   "Color": "#cc6454",
+  "SubColor": "#f9ecbc",
   "Region": "カントー"
  },
  {
   "Number": "54",
   "Name": "コダック",
   "Color": "#e4bc74",
+  "SubColor": "#f5d37d",
   "Region": "カントー"
  },
  {
   "Number": "55",
   "Name": "ゴルダック",
   "Color": "#5484b0",
+  "SubColor": "#8cb4dc",
   "Region": "カントー"
  },
  {
   "Number": "56",
   "Name": "マンキー",
   "Color": "#cca47f",
+  "SubColor": "#fcecdc",
   "Region": "カントー"
  },
  {
   "Number": "57",
   "Name": "オコリザル",
   "Color": "#c19f7a",
+  "SubColor": "#fcecdc",
   "Region": "カントー"
  },
  {
   "Number": "58",
   "Name": "ガーディ",
   "Color": "#d29a5b",
+  "SubColor": "#eaba89",
   "Region": "カントー"
  },
  {
   "Number": "59",
   "Name": "ウインディ",
   "Color": "#d88e58",
+  "SubColor": "#efd4ac",
   "Region": "カントー"
  },
  {
   "Number": "60",
   "Name": "ニョロモ",
   "Color": "#5c84bc",
+  "SubColor": "#b4c8db",
   "Region": "カントー"
  },
  {
   "Number": "61",
   "Name": "ニョロゾ",
   "Color": "#5c84bc",
+  "SubColor": "#90acd4",
   "Region": "カントー"
  },
  {
   "Number": "62",
   "Name": "ニョロボン",
   "Color": "#5c84bb",
+  "SubColor": "#b4c4e4",
   "Region": "カントー"
  },
  {
   "Number": "63",
   "Name": "ケーシィ",
   "Color": "#f4dc4c",
+  "SubColor": "#f3e78e",
   "Region": "カントー"
  },
  {
   "Number": "64",
   "Name": "ユンゲラー",
   "Color": "#f4dc4c",
+  "SubColor": "#f6e268",
   "Region": "カントー"
  },
  {
   "Number": "65",
   "Name": "フーディン",
   "Color": "#ecd444",
+  "SubColor": "#f0e287",
   "Region": "カントー"
  },
  {
   "Number": "66",
   "Name": "ワンリキー",
   "Color": "#c06454",
+  "SubColor": "#e2948f",
   "Region": "カントー"
  },
  {
   "Number": "67",
   "Name": "ゴーリキー",
   "Color": "#c4ba74",
+  "SubColor": "#e0cf93",
   "Region": "カントー"
  },
  {
   "Number": "68",
   "Name": "カイリキー",
   "Color": "#6c4434",
+  "SubColor": "#e1d9ad",
   "Region": "カントー"
  },
  {
   "Number": "69",
   "Name": "マダツボミ",
   "Color": "#f4ec64",
+  "SubColor": "#f4ef84",
   "Region": "カントー"
  },
  {
   "Number": "70",
   "Name": "ウツドン",
   "Color": "#eeeb66",
+  "SubColor": "#f1ef8d",
   "Region": "カントー"
  },
  {
   "Number": "71",
   "Name": "ウツボット",
   "Color": "#e9e75d",
+  "SubColor": "#f3f291",
   "Region": "カントー"
  },
  {
   "Number": "72",
   "Name": "メノクラゲ",
   "Color": "#b4344c",
+  "SubColor": "#94cae9",
   "Region": "カントー"
  },
  {
   "Number": "73",
   "Name": "ドククラゲ",
   "Color": "#4ca6cf",
+  "SubColor": "#87caec",
   "Region": "カントー"
  },
  {
   "Number": "74",
   "Name": "イシツブテ",
-  "Color": "#98.864",
+  "Color": "#8d8072",
+  "SubColor": "#c4bdb6",
   "Region": "カントー"
  },
  {
   "Number": "75",
   "Name": "ゴローン",
-  "Color": "#c834b8",
+  "Color": "#c8375e",
+  "SubColor": "#e8acbc",
   "Region": "カントー"
  },
  {
   "Number": "76",
   "Name": "ゴローニャ",
-  "Color": "#a1f4.8",
+  "Color": "#ad5280",
+  "SubColor": "#d4a4bc",
   "Region": "カントー"
  },
  {
   "Number": "77",
   "Name": "ポニータ",
   "Color": "#f2be05",
+  "SubColor": "#fcfcd4",
   "Region": "カントー"
  },
  {
   "Number": "78",
   "Name": "ギャロップ",
   "Color": "#fad83c",
+  "SubColor": "#fcf4cc",
   "Region": "カントー"
  },
  {
   "Number": "79",
   "Name": "ヤドン",
-  "Color": "#e81a24",
+  "Color": "#c03f64",
+  "SubColor": "#e4acbc",
   "Region": "カントー"
  },
  {
   "Number": "80",
   "Name": "ヤドラン",
-  "Color": "#e81a24",
+  "Color": "#c03f64",
+  "SubColor": "#e4acbc",
   "Region": "カントー"
  },
  {
   "Number": "81",
   "Name": "コイル",
   "Color": "#38769b",
+  "SubColor": "#6ba3b8",
   "Region": "カントー"
  },
  {
   "Number": "82",
   "Name": "レアコイル",
   "Color": "#2879a0",
+  "SubColor": "#9cc9dc",
   "Region": "カントー"
  },
  {
   "Number": "83",
   "Name": "カモネギ",
   "Color": "#f9cc32",
+  "SubColor": "#ebda99",
   "Region": "カントー"
  },
  {
   "Number": "84",
   "Name": "ドードー",
   "Color": "#d29e72",
+  "SubColor": "#dcb28a",
   "Region": "カントー"
  },
  {
   "Number": "85",
   "Name": "ドードリオ",
   "Color": "#cf9b78",
+  "SubColor": "#e69990",
   "Region": "カントー"
  },
  {
   "Number": "86",
   "Name": "パウワウ",
-  "Color": "#689894",
+  "Color": "#c29d3d",
+  "SubColor": "#e4d4aa",
   "Region": "カントー"
  },
  {
   "Number": "87",
   "Name": "ジュゴン",
-  "Color": "#2ee88d",
+  "Color": "#237fdc",
+  "SubColor": "#ecf4fc",
   "Region": "カントー"
  },
  {
   "Number": "88",
   "Name": "ベトベター",
-  "Color": "#6e44dc",
+  "Color": "#8a5da2",
+  "SubColor": "#c2abcf",
   "Region": "カントー"
  },
  {
   "Number": "89",
   "Name": "ベトベトン",
-  "Color": "#7a04f8",
+  "Color": "#896897",
+  "SubColor": "#c1b1c9",
   "Region": "カントー"
  },
  {
   "Number": "90",
   "Name": "シェルダー",
-  "Color": "#a85858",
+  "Color": "#b84747",
+  "SubColor": "#dbb0b5",
   "Region": "カントー"
  },
  {
   "Number": "91",
   "Name": "パルシェン",
-  "Color": "#3c3bc5",
+  "Color": "#776798",
+  "SubColor": "#b8b0c9",
   "Region": "カントー"
  },
  {
   "Number": "92",
   "Name": "ゴース",
-  "Color": "#f80606",
+  "Color": "#d42b2b",
+  "SubColor": "#e99191",
   "Region": "カントー"
  },
  {
   "Number": "93",
   "Name": "ゴースト",
-  "Color": "#.204f8",
+  "Color": "#9b6486",
+  "SubColor": "#cbaec0",
   "Region": "カントー"
  },
  {
   "Number": "94",
   "Name": "ゲンガー",
-  "Color": "#981584",
+  "Color": "#d64329",
+  "SubColor": "#eca89c",
   "Region": "カントー"
  },
  {
   "Number": "95",
   "Name": "イワーク",
-  "Color": "#fcfc.8",
+  "Color": "#6b6b94",
+  "SubColor": "#b2b2c7",
   "Region": "カントー"
  },
  {
   "Number": "96",
   "Name": "スリープ",
   "Color": "#eccc34",
+  "SubColor": "#e4cf87",
   "Region": "カントー"
  },
  {
   "Number": "97",
   "Name": "スリーパー",
   "Color": "#fadc44",
+  "SubColor": "#fae987",
   "Region": "カントー"
  },
  {
   "Number": "98",
   "Name": "クラブ",
   "Color": "#f49c64",
+  "SubColor": "#f3b98f",
   "Region": "カントー"
  },
  {
   "Number": "99",
   "Name": "キングラー",
   "Color": "#ec9c5d",
+  "SubColor": "#f2b68d",
   "Region": "カントー"
  },
  {
   "Number": "100",
   "Name": "ビリリダマ",
   "Color": "#dc8c84",
+  "SubColor": "#e49384",
   "Region": "カントー"
  },
  {
   "Number": "101",
   "Name": "マルマイン",
   "Color": "#d3908c",
+  "SubColor": "#c4848c",
   "Region": "カントー"
  },
  {
   "Number": "102",
   "Name": "タマタマ",
   "Color": "#ccb84b",
+  "SubColor": "#fce4ec",
   "Region": "カントー"
  },
  {
   "Number": "103",
   "Name": "ナッシー",
   "Color": "#91c375",
+  "SubColor": "#dad5a8",
   "Region": "カントー"
  },
  {
   "Number": "104",
   "Name": "カラカラ",
   "Color": "#d4b87c",
+  "SubColor": "#dcbc8c",
   "Region": "カントー"
  },
  {
   "Number": "105",
   "Name": "ガラガラ",
   "Color": "#c6a569",
+  "SubColor": "#d4ad6f",
   "Region": "カントー"
  },
  {
   "Number": "106",
   "Name": "サワムラー",
   "Color": "#c4b474",
+  "SubColor": "#e4d68c",
   "Region": "カントー"
  },
  {
   "Number": "107",
   "Name": "エビワラー",
   "Color": "#bd6253",
+  "SubColor": "#edb1a5",
   "Region": "カントー"
  },
  {
   "Number": "108",
   "Name": "ベロリンガ",
   "Color": "#cc949a",
+  "SubColor": "#f4b7bc",
   "Region": "カントー"
  },
  {
   "Number": "109",
   "Name": "ドガース",
   "Color": "#cccc74",
+  "SubColor": "#aca4d4",
   "Region": "カントー"
  },
  {
   "Number": "110",
   "Name": "マタドガス",
-  "Color": "#f8956b",
+  "Color": "#7f619e",
+  "SubColor": "#bdadcd",
   "Region": "カントー"
  },
  {
   "Number": "111",
   "Name": "サイホーン",
-  "Color": "#5cd8a8",
+  "Color": "#717f8e",
+  "SubColor": "#b5bcc4",
   "Region": "カントー"
  },
  {
   "Number": "112",
   "Name": "サイドン",
-  "Color": "#2424d8",
+  "Color": "#687897",
+  "SubColor": "#b1b9c9",
   "Region": "カントー"
  },
  {
   "Number": "113",
   "Name": "ラッキー",
-  "Color": "#196ec2",
+  "Color": "#d72839",
+  "SubColor": "#f1b4ba",
   "Region": "カントー"
  },
  {
   "Number": "114",
   "Name": "モンジャラ",
   "Color": "#6ca1c4",
+  "SubColor": "#eca48c",
   "Region": "カントー"
  },
  {
   "Number": "115",
   "Name": "ガルーラ",
-  "Color": "#18b8ea",
+  "Color": "#ceb231",
+  "SubColor": "#ece1af",
   "Region": "カントー"
  },
  {
   "Number": "116",
   "Name": "タッツー",
   "Color": "#6cb1d4",
+  "SubColor": "#94d4ec",
   "Region": "カントー"
  },
  {
   "Number": "117",
   "Name": "シードラ",
   "Color": "#6eb0d3",
+  "SubColor": "#94d4ec",
   "Region": "カントー"
  },
  {
   "Number": "118",
   "Name": "トサキント",
   "Color": "#cc6c3c",
+  "SubColor": "#ec946c",
   "Region": "カントー"
  },
  {
   "Number": "119",
   "Name": "アズマオウ",
   "Color": "#e47454",
+  "SubColor": "#dfaa97",
   "Region": "カントー"
  },
  {
   "Number": "120",
   "Name": "ヒトデマン",
   "Color": "#e9d675",
+  "SubColor": "#faec8c",
   "Region": "カントー"
  },
  {
   "Number": "121",
   "Name": "スターミー",
   "Color": "#e6d372",
+  "SubColor": "#f3e8ba",
   "Region": "カントー"
  },
  {
   "Number": "122",
   "Name": "バリヤード",
   "Color": "#326994",
+  "SubColor": "#ea859e",
   "Region": "カントー"
  },
  {
   "Number": "123",
   "Name": "ストライク",
   "Color": "#9eca83",
+  "SubColor": "#bfdc96",
   "Region": "カントー"
  },
  {
   "Number": "124",
   "Name": "ルージュラ",
   "Color": "#bc5c54",
+  "SubColor": "#fbed90",
   "Region": "カントー"
  },
  {
   "Number": "125",
   "Name": "エレブー",
   "Color": "#b39c5b",
+  "SubColor": "#fcdc7f",
   "Region": "カントー"
  },
  {
   "Number": "126",
   "Name": "ブーバー",
   "Color": "#e8642c",
+  "SubColor": "#fce476",
   "Region": "カントー"
  },
  {
   "Number": "127",
   "Name": "カイロス",
-  "Color": "#489cb8",
+  "Color": "#90766f",
+  "SubColor": "#c5b8b4",
   "Region": "カントー"
  },
  {
   "Number": "128",
   "Name": "ケンタロス",
   "Color": "#dbac64",
+  "SubColor": "#e3bc7c",
   "Region": "カントー"
  },
  {
   "Number": "129",
   "Name": "コイキング",
   "Color": "#ec7454",
+  "SubColor": "#f5cc75",
   "Region": "カントー"
  },
  {
   "Number": "130",
   "Name": "ギャラドス",
   "Color": "#348bb3",
+  "SubColor": "#82c8ea",
   "Region": "カントー"
  },
  {
   "Number": "131",
   "Name": "ラプラス",
   "Color": "#4494bc",
+  "SubColor": "#8cccec",
   "Region": "カントー"
  },
  {
   "Number": "132",
   "Name": "メタモン",
-  "Color": "#88241e",
+  "Color": "#8b50af",
+  "SubColor": "#d8c4e4",
   "Region": "カントー"
  },
  {
   "Number": "133",
   "Name": "イーブイ",
   "Color": "#cc9c54",
+  "SubColor": "#f2e2b9",
   "Region": "カントー"
  },
  {
   "Number": "134",
   "Name": "シャワーズ",
   "Color": "#267493",
+  "SubColor": "#87cce4",
   "Region": "カントー"
  },
  {
   "Number": "135",
   "Name": "サンダース",
   "Color": "#fcdc64",
+  "SubColor": "#fcdc6c",
   "Region": "カントー"
  },
  {
   "Number": "136",
   "Name": "ブースター",
   "Color": "#eb843c",
+  "SubColor": "#f9eca2",
   "Region": "カントー"
  },
  {
   "Number": "137",
   "Name": "ポリゴン",
   "Color": "#df5d68",
+  "SubColor": "#f0a8b4",
   "Region": "カントー"
  },
  {
   "Number": "138",
   "Name": "オムナイト",
   "Color": "#77bed4",
+  "SubColor": "#ece4bd",
   "Region": "カントー"
  },
  {
   "Number": "139",
   "Name": "オムスター",
   "Color": "#64a6c4",
+  "SubColor": "#a2d3e4",
   "Region": "カントー"
  },
  {
   "Number": "140",
   "Name": "カブト",
   "Color": "#bb946c",
+  "SubColor": "#f3cb87",
   "Region": "カントー"
  },
  {
   "Number": "141",
   "Name": "カブトプス",
   "Color": "#b48c54",
+  "SubColor": "#c49e70",
   "Region": "カントー"
  },
  {
   "Number": "142",
   "Name": "プテラ",
-  "Color": "#93186d",
+  "Color": "#b65f49",
+  "SubColor": "#e4c4bc",
   "Region": "カントー"
  },
  {
   "Number": "143",
   "Name": "カビゴン",
   "Color": "#4c8cac",
+  "SubColor": "#f4ecdf",
   "Region": "カントー"
  },
  {
   "Number": "144",
   "Name": "フリーザー",
   "Color": "#2c94bb",
+  "SubColor": "#84bce4",
   "Region": "カントー"
  },
  {
   "Number": "145",
   "Name": "サンダー",
   "Color": "#e4c371",
+  "SubColor": "#fce47c",
   "Region": "カントー"
  },
  {
   "Number": "146",
   "Name": "ファイヤー",
   "Color": "#f48f62",
+  "SubColor": "#fccc6c",
   "Region": "カントー"
  },
  {
   "Number": "147",
   "Name": "ミニリュウ",
   "Color": "#8c9cd4",
+  "SubColor": "#acc4e4",
   "Region": "カントー"
  },
  {
   "Number": "148",
   "Name": "ハクリュー",
   "Color": "#3474b6",
+  "SubColor": "#84b4e4",
   "Region": "カントー"
  },
  {
   "Number": "149",
   "Name": "カイリュー",
   "Color": "#f4bc64",
+  "SubColor": "#f4cc81",
   "Region": "カントー"
  },
  {
   "Number": "150",
   "Name": "ミュウツー",
-  "Color": "#f80c9c",
+  "Color": "#88777d",
+  "SubColor": "#c1b8bc",
   "Region": "カントー"
  },
  {
   "Number": "151",
   "Name": "ミュウ",
   "Color": "#4f82b4",
+  "SubColor": "#f4c4d4",
   "Region": "カントー"
  }
 ]

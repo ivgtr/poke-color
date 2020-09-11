@@ -1,8 +1,9 @@
 <template>
-  <div class="wrapper mx-20">
+  <main class="wrapper relative z-10 mx-10">
     <h1 class="text-center text-5xl font-bold mt-12">poke color</h1>
     <colors />
-  </div>
+    <portal-target name="notification" />
+  </main>
 </template>
 
 <script lang="ts">
@@ -28,6 +29,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .wrapper {
-  width: calc(100vw - 10rem);
+  max-width: 720px;
 }
 </style>

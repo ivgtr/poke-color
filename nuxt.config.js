@@ -59,7 +59,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    'nuxt-clipboard2',
+    'portal-vue/nuxt'
+  ],
   styleResources: {
     scss: ['~/assets/styles/scss/functions.scss']
   },
