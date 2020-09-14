@@ -5,7 +5,7 @@ const config = {
   mode: 'universal',
   target: 'static',
   head: {
-    title: 'PokeColor',
+    title: 'PokéColor',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

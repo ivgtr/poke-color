@@ -1,6 +1,6 @@
 <template>
   <div class="title text-center">
-    <h1 class="text-5xl font-bold mt-12">PokeColor</h1>
+    <h1 class="text-5xl font-bold mt-12">PokéColor</h1>
     <p class="text-xs italic opacity-75">
       11/09/2020 - カントー地方のポケモンまで追加済
     </p>
