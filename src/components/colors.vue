@@ -6,7 +6,7 @@
       class="item inline-block w-32 mx-auto"
     >
       <div
-        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md cursor-pointer"
+        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md"
       >
         <div
           class="color relative z-10 grid h-full w-full rounded"
@@ -15,13 +15,13 @@
           @click.self="onCopy(p.Color)"
         >
           <span
-            class="inline-block w-full"
+            class="inline-block w-full cursor-pointer"
             :style="{ backgroundColor: p.Color }"
             @mouseover.self="colorPreview(p.Color)"
             @click="onCopy(p.Color)"
           ></span>
           <span
-            class="inline-block w-full"
+            class="inline-block w-full cursor-pointer"
             :style="{ backgroundColor: p.SubColor }"
             @mouseover.self="colorPreview(p.SubColor)"
             @click="onCopy(p.SubColor)"
@@ -132,9 +132,16 @@ export default Vue.extend({
 .items {
   flex-wrap: wrap;
   .item {
-    .color {
-      transition: all 0.2s ease-in;
-      grid-template-rows: 7fr 3fr;
+    .container {
+      .color {
+        transition: all 0.2s ease-in;
+        grid-template-rows: 7fr 3fr;
+      }
+      &:hover {
+        .color {
+          height: 50%;
+        }
+      }
     }
     &:hover {
       .number {
@@ -142,9 +149,6 @@ export default Vue.extend({
         &.active {
           color: #fff;
         }
-      }
-      .color {
-        height: 50%;
       }
     }
   }
