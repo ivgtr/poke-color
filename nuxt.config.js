@@ -1,4 +1,6 @@
-export default {
+require('dotenv').config()
+
+const config = {
   srcDir: 'src/',
   mode: 'universal',
   target: 'static',
@@ -64,7 +66,8 @@ export default {
     '@nuxtjs/style-resources',
     'nuxt-clipboard2',
     'portal-vue/nuxt',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }]
   ],
   styleResources: {
     scss: ['~/assets/styles/scss/functions.scss']
@@ -86,3 +89,5 @@ export default {
     base: '/'
   }
 }
+
+export default config
