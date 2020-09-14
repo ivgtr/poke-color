@@ -6,6 +6,9 @@ const config = {
   target: 'static',
   head: {
     title: 'PokéColor',
+    htmlAttrs: {
+      lang: 'ja'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -14,7 +17,25 @@ const config = {
         name: 'description',
         content:
           'あのポケモンの色を使ってみたいと思ったことはありませんか？このサイトでは、あなたの好きなポケモンのカラーコードを自由に入手することができます。'
-      }
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'PokéColor'
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'PokéColor'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'あのポケモンの色を使ってみたいと思ったことはありませんか？このサイトでは、あなたの好きなポケモンのカラーコードを自由に入手することができます。'
+      },
+      { name: 'twitter:card', content: 'summary' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
