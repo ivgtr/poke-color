@@ -9,7 +9,9 @@ module.exports = {
     removeDeprecatedGapUtilities: true
   },
   theme: {},
-  variants: {},
+  variants: {
+    boxShadow: ['hover']
+  },
   plugins: [],
   purge: {
     enabled: process.env.NODE_ENV === 'production',

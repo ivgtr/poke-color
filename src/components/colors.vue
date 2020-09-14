@@ -6,7 +6,7 @@
       class="item inline-block w-32 mx-auto"
     >
       <div
-        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md"
+        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md hover:shadow-lg"
       >
         <div
           class="color relative z-10 grid h-full w-full rounded"
@@ -138,6 +138,8 @@ export default Vue.extend({
         grid-template-rows: 7fr 3fr;
       }
       &:hover {
+        transition: box-shadow 0.2s ease-in;
+
         .color {
           height: 50%;
         }
