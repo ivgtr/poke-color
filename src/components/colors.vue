@@ -6,7 +6,7 @@
       class="item inline-block w-32 mx-auto"
     >
       <div
-        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md"
+        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md cursor-pointer"
       >
         <div
           class="color relative z-10 grid h-full w-full rounded"
@@ -43,7 +43,10 @@
         </div>
       </div>
 
-      <p class="number text-xs mt-2 w-full text-center pointer-events-none">
+      <p
+        class="number text-xs mt-2 w-full text-center pointer-events-none"
+        :class="{ active: preview && preview !== '#fff' }"
+      >
         No. {{ p.Number }}
       </p>
     </div>
@@ -136,7 +139,9 @@ export default Vue.extend({
     &:hover {
       .number {
         transition: all 0.2s ease-in;
-        color: #fff;
+        &.active {
+          color: #fff;
+        }
       }
       .color {
         height: 50%;
