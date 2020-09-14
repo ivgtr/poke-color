@@ -22,6 +22,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Create .env file
+      run: echo "${{ secrets.ENV_DEPLOY }}" > .env
     - name: nuxt build
       run: |
            npm install
