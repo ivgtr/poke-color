@@ -1,6 +1,6 @@
 <template>
   <div
-    class="chip fixed inline-block rounded-md shadow-md"
+    class="chip fixed z-50 inline-block rounded-md shadow-md"
     :style="{ backgroundColor: color }"
   >
     <p class="mx-6 my-2 text-white text-xs">{{ msg }}</p>

@@ -3,32 +3,48 @@
     <div
       v-for="p in pokemon"
       :key="p.id"
-      class="container inline-block rounded-md h-32 w-32 overflow-hidden bg-white cursor-pointer mx-auto mt-4 text-center"
-      @mouseover.self="colorPreview(p.Color)"
-      @mouseleave="colorPreview('#fff')"
-      @click.self="onCopy(p.Color)"
+      class="item inline-block w-32 mx-auto"
     >
-      <div class="item grid w-full">
-        <span
-          class="inline-block w-full"
-          :style="{ backgroundColor: p.Color }"
+      <div
+        class="container relative h-32 w-full rounded-md overflow-hidden bg-white shadow-md"
+      >
+        <div
+          class="color relative z-10 grid h-full w-full rounded"
           @mouseover.self="colorPreview(p.Color)"
-          @click="onCopy(p.Color)"
-        ></span>
-        <span
-          class="inline-block w-full"
-          :style="{ backgroundColor: p.SubColor }"
-          @mouseover.self="colorPreview(p.SubColor)"
-          @click="onCopy(p.SubColor)"
-        ></span>
+          @mouseleave="colorPreview('#fff')"
+          @click.self="onCopy(p.Color)"
+        >
+          <span
+            class="inline-block w-full"
+            :style="{ backgroundColor: p.Color }"
+            @mouseover.self="colorPreview(p.Color)"
+            @click="onCopy(p.Color)"
+          ></span>
+          <span
+            class="inline-block w-full"
+            :style="{ backgroundColor: p.SubColor }"
+            @mouseover.self="colorPreview(p.SubColor)"
+            @click="onCopy(p.SubColor)"
+          ></span>
+        </div>
+        <div class="absolute z-0 w-full bottom-0">
+          <p
+            class="text-xs w-full text-center pointer-events-none"
+            :style="{ color: p.Color }"
+          >
+            {{ p.Color }}
+          </p>
+          <p
+            class="text-xs w-full text-center pb-1 pointer-events-none"
+            :style="{ color: p.SubColor }"
+          >
+            {{ p.SubColor }}
+          </p>
+        </div>
       </div>
 
-      <p class="text-xs mt-1 pointer-events-none">No. {{ p.Number }}</p>
-      <p class="text-xs mt-1 pointer-events-none" :style="{ color: p.Color }">
-        {{ p.Color }}
-      </p>
-      <p class="text-xs pointer-events-none" :style="{ color: p.SubColor }">
-        {{ p.SubColor }}
+      <p class="number text-xs mt-2 w-full text-center pointer-events-none">
+        No. {{ p.Number }}
       </p>
     </div>
     <portal to="notification">
@@ -112,14 +128,17 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .items {
   flex-wrap: wrap;
-  .container {
-    .item {
+  .item {
+    .color {
       transition: all 0.2s ease-in;
       grid-template-rows: 7fr 3fr;
-      height: 100%;
     }
     &:hover {
-      .item {
+      .number {
+        transition: all 0.2s ease-in;
+        color: #fff;
+      }
+      .color {
         height: 50%;
       }
     }
