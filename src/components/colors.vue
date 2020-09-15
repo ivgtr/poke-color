@@ -134,8 +134,8 @@ export default Vue.extend({
   .item {
     .container {
       .color {
-        transition: all 0.2s ease-in;
         grid-template-rows: 7fr 3fr;
+        transition: all 0.2s ease-in;
       }
       &:hover {
         transition: box-shadow 0.2s ease-in;
