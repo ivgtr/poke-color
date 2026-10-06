@@ -1,4 +1,6 @@
-@charset "UTF-8";
+@use 'variables' as *;
+
+@layer base {
 
 // ***********************************************
 //  Base
@@ -35,4 +37,6 @@ textarea {
   &:disabled {
     background: none;
   }
+}
+
 }

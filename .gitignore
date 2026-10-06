@@ -92,3 +92,9 @@ sw.*
 
 # localize data
 # /src/localize/pokemon/*.json
+# Nuxt build output
+.output
+.data
+
+# Vite SSG temporary build
+.vite-ssg-temp

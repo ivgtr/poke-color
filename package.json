@@ -2,44 +2,41 @@
   "name": "poke-color",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "^24.11.0"
+  },
   "scripts": {
-    "dev": "nuxt --port 24340",
-    "config": "node functions/createZukan.js",
-    "prebuild": "npm run lint",
-    "build": "nuxt generate",
-    "start": "nuxt start",
+    "dev": "vite --port 24340",
+    "config": "node functions/createZukan.cjs",
+    "prebuild": "npm run lint && npm run typecheck",
+    "build": "vite-ssg build",
+    "start": "vite preview --port 24340",
     "proxy": "ngrok http 24340 -hostname=pokecolor.jp.ngrok.io -region jp",
-    "lint": "eslint ./src/*/*.vue"
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "postbuild": "node scripts/check-build.mjs"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^1.0.0",
-    "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "googleapis": "^59.0.0",
-    "nuxt": "^2.14.0",
-    "nuxt-clipboard2": "^0.2.1",
-    "nuxt-webfontloader": "^1.1.0",
-    "portal-vue": "^2.1.7",
-    "ress": "^3.0.0"
+    "vue": "^3.5.43"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.0",
-    "@nuxt/typescript-build": "^2.0.2",
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/style-resources": "^1.0.0",
-    "@nuxtjs/tailwindcss": "^2.1.0",
-    "eslint": "^7.7.0",
-    "eslint-config-metamo": "^0.2.10",
-    "husky": "^4.2.5",
-    "node-sass": "^4.14.1",
-    "prettier": "^2.0.5",
-    "sass-loader": "^9.0.3",
-    "stylelint": "^13.6.1",
-    "stylelint-config-metamo": "^0.0.1"
+    "@eslint/js": "^10.0.1",
+    "@googleapis/sheets": "^18.1.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "eslint": "^10.12.0",
+    "eslint-plugin-vue": "^10.11.1",
+    "globals": "^17.13.0",
+    "sass": "^1.105.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.1",
+    "vite": "^8.3.2",
+    "vite-plugin-pwa": "^2.0.0",
+    "vite-ssg": "^28.3.0",
+    "vue-tsc": "^3.3.12"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint ./src/*/*.vue"
-    }
-  }
+  "type": "module"
 }
