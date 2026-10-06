@@ -2,7 +2,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/mawaru_hana?style=social)](https://twitter.com/mawaru_hana) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![CI](https://github.com/ivgtr/poke-color/workflows/CI/badge.svg)](https://github.com/ivgtr/poke-color)  
 
 Have you ever wanted to use that Pokémon color?  
-Feel free to get the color code of your favorite Pokémon at this [site](https://poke-color.web.app/).  
+Browse and copy the color codes of your favorite Pokémon by running the app locally.
 
 ## Development
 
@@ -14,8 +14,10 @@ Use Node.js 24.11 or newer in the Node 24 LTS line (`nvm use`).
 - `npm run build` runs ESLint and TypeScript checks, then generates `dist/`
 - `npm audit` checks the full dependency tree
 
-Firebase Hosting continues to serve `dist/`. Pull requests run validation only;
-the existing deployment runs only on pushes to `master`.
+The hosted site has been retired. CI runs tests, a dependency audit, lint, type
+checks, and a static build on pull requests and pushes to `master`.
+Automatic deployment is disabled; `dist/` remains available for local preview
+with `npm start` after building.
 
 The app now uses Vite, Vue 3, and Tailwind CSS 4. Supported browsers are
 Chrome 111+, Safari 16.4+, and Firefox 128+. The pre-rendered color data, hover preview,
