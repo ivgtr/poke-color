@@ -1,14 +1,14 @@
 const path = require('path')
 const fs = require('fs')
-const { google } = require('googleapis')
-const sheets = google.sheets('v4')
+const { sheets: createSheets, auth: googleAuth } = require('@googleapis/sheets')
+const sheets = createSheets('v4')
 
 execAPI('1Qhnt9UAis46VfZA9I9I4lyJ0z55Oa1UzHJfK94Zr6eo', 'jp!A1:E152')
 
 async function execAPI(spreadsheetId, range) {
-  const auth = await google.auth.getClient({
+  const auth = await googleAuth.getClient({
     keyFile: path.join('./sa.env.json'),
-    scopes: ['https://www.googleapis.com/auth/spreadsheets']
+    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly']
   })
 
   const apiOptions = {

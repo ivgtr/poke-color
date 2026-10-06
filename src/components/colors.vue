@@ -2,7 +2,7 @@
   <div class="items flex gap-4 mt-12 content-center justify-center">
     <div
       v-for="p in pokemon"
-      :key="p.id"
+      :key="p.Number"
       class="item inline-block w-32 mx-auto"
     >
       <div
@@ -19,13 +19,13 @@
             :style="{ backgroundColor: p.Color }"
             @mouseover.self="colorPreview(p.Color)"
             @click="onCopy(p.Color)"
-          ></span>
+          />
           <span
             class="inline-block w-full cursor-pointer"
             :style="{ backgroundColor: p.SubColor }"
             @mouseover.self="colorPreview(p.SubColor)"
             @click="onCopy(p.SubColor)"
-          ></span>
+          />
         </div>
         <div class="absolute z-0 w-full bottom-0">
           <p
@@ -50,81 +50,49 @@
         No. {{ p.Number }}
       </p>
     </div>
-    <portal to="notification">
-      <transition name="fade">
-        <Notification v-if="open" :color="color" :msg="msg" />
-      </transition>
-    </portal>
-    <portal to="backgroundColor">
-      <div
-        class="bg fixed inset-0 z-0 h-full w-full"
-        :style="{
-          backgroundColor: preview,
-          opacity: preview === '#fff' ? '0' : '1'
-        }"
-      ></div>
-    </portal>
+    <transition name="fade">
+      <Notification
+        v-if="open"
+        :color="color"
+        :msg="msg"
+      />
+    </transition>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script setup lang="ts">
+import { ref, onBeforeUnmount } from 'vue'
+import pokemon from '../localize/pokemon/ja.json'
+import Notification from './notification.vue'
+import { copyText } from '../utils/clipboard'
 
-import pokemon from '~/localize/pokemon/ja.json'
+const emit = defineEmits<{ preview: [color: string] }>()
+const preview = ref('#fff')
+const open = ref(false)
+const color = ref('')
+const msg = 'コピーしました'
+let timer: ReturnType<typeof setTimeout> | undefined
 
-declare module 'vue/types/vue' {
-  interface Vue {
-    $copyText(message: string): void
+function colorPreview(value: string): void {
+  preview.value = value
+  emit('preview', value)
+}
+
+async function onCopy(colorCode: string): Promise<void> {
+  try {
+    await copyText(colorCode)
+    color.value = colorCode
+    clearTimeout(timer)
+    open.value = true
+    timer = setTimeout(() => { open.value = false }, 3000)
+  } catch (error) {
+    console.error(error)
   }
 }
 
-type poekmon = {
-  Number: string
-  Name: string
-  Color: string
-  Region: string
-}
-
-type localData = {
-  pokemon: poekmon[]
-  preview: string
-  open: boolean
-  timer: any
-  color: string
-  msg: string
-}
-
-export default Vue.extend({
-  data(): localData {
-    return {
-      pokemon,
-      preview: '',
-      open: false,
-      timer: undefined,
-      color: '',
-      msg: 'コピーしました'
-    }
-  },
-  mounted() {},
-  methods: {
-    colorPreview(color: string): void {
-      this.preview = color
-    },
-    async onCopy(colorCode: string): Promise<void> {
-      try {
-        await this.$copyText(colorCode)
-        this.color = colorCode
-
-        await clearTimeout(this.timer)
-        this.open = true
-        this.timer = setTimeout(() => {
-          this.open = false
-        }, 3000)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-  }
+onBeforeUnmount(() => {
+  clearTimeout(timer)
+  colorPreview('#fff')
 })
 </script>
 
@@ -155,14 +123,12 @@ export default Vue.extend({
     }
   }
 }
-.bg {
-  transition: all 0.2s ease-in;
-}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
 }
-.fade-enter,
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
   transform: translateY(10px);

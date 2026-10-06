@@ -1,12 +1,3 @@
-@charset "UTF-8";
-// mixin
-// ===============================================
-@import 'fontface';
-@import 'variables';
-// Layout
-// ===============================================
-@import 'base';
-
-// Animate
-// ===============================================
-@import 'animation';
+@use 'fontface';
+@use 'base';
+@use 'animation';

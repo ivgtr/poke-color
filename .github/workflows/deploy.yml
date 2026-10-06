@@ -1,36 +1,38 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Create .env file
-      run: echo "${{ secrets.ENV_DEPLOY }}" > .env
-    - name: nuxt build
-      run: |
-           npm install
-           npm run build
-    - name: deploy to Firebase Hosting
-      uses: w9jds/firebase-action@master
-      with:
-        args: deploy
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm audit --audit-level=low
+      - name: Load deployment configuration
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        env:
+          ENV_DEPLOY: ${{ secrets.ENV_DEPLOY }}
+        run: printf '%s' "$ENV_DEPLOY" > .env
+      - run: npm run build
+      - name: Deploy to Firebase Hosting
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: w9jds/firebase-action@35d0fd9b92b2c66dcd13f1b72dacc588e89e7567 # v15.32.1
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
