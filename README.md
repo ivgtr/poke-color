@@ -1,8 +1,7 @@
 # PokéColor
-[![Twitter Follow](https://img.shields.io/twitter/follow/mawaru_hana?style=social)](https://twitter.com/mawaru_hana) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![CI](https://github.com/ivgtr/poke-color/workflows/CI/badge.svg)](https://github.com/ivgtr/poke-color)  
 
-Have you ever wanted to use that Pokémon color?  
-Feel free to get the color code of your favorite Pokémon at this [site](https://poke-color.web.app/).  
+Color cards inspired by the original 151 Pokémon. Hover to preview a color and
+click to copy its hex code.
 
 ## Development
 
@@ -12,25 +11,13 @@ Use Node.js 24.11 or newer in the Node 24 LTS line (`nvm use`).
 - `npm run dev` serves the app on port 24340
 - `npm test` checks the 151 Pokémon records
 - `npm run build` runs ESLint and TypeScript checks, then generates `dist/`
-- `npm audit` checks the full dependency tree
+- `npm start` previews the build on port 24340
 
-Firebase Hosting continues to serve `dist/`. Pull requests run validation only;
-the existing deployment runs only on pushes to `master`.
-
-The app now uses Vite, Vue 3, and Tailwind CSS 4. Supported browsers are
-Chrome 111+, Safari 16.4+, and Firefox 128+. The pre-rendered color data, hover preview,
-copy notifications, and offline PWA are retained.
-
-Optional analytics uses a Google Analytics 4 measurement ID (`GA_KEY=G-...`
-in `.env` at build time). Legacy `UA-...` IDs are no longer supported by Google
-and are not loaded; replace one with your own GA4 ID if analytics is required.
-No analytics is loaded when `GA_KEY` is unset.
-
-`npm run config` refreshes the checked-in colors from the existing Google Sheet.
-It requires the existing, git-ignored `sa.env.json` service-account file and uses
-read-only Sheets access. Normal development and builds use the checked-in JSON
-and do not require credentials.
+Open http://localhost:24340. Local development uses the checked-in color data;
+no credentials or environment variables are required.
 
 ## License
-MIT ©[ivgtr](https://github.com/ivgtr)  
-Created by ©[ivgtr](https://github.com/ivgtr), but Pokémon and Pokémon character names are trademarks of Nintendo.
+
+[MIT](LICENSE) © [ivgtr](https://github.com/ivgtr)
+
+Pokémon and Pokémon character names are trademarks of Nintendo.
