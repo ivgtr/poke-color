@@ -21,13 +21,11 @@ for (const file of ['404.html', 'favicon.ico', 'sw.js']) {
 }
 
 const worker = readFileSync('dist/sw.js', 'utf8')
-const precachedUrls = [...worker.matchAll(/\burl:"([^"]+)"/g)].map(match => match[1])
-assert.ok(precachedUrls.includes('index.html'), 'The home page must work offline')
-for (const url of precachedUrls) {
-  const file = url === '/' ? 'index.html' : url
-  assert.ok(existsSync(join('dist', file)), `Missing precache target: ${url}`)
+const entries = JSON.parse(worker.match(/const ASSETS = (.*);/)?.[1] || 'null')
+assert.ok(Array.isArray(entries), 'Missing precache list')
+assert.ok(entries.some(item => item.url === '/index.html'), 'The home page must work offline')
+for (const {url, revision} of entries) {
+  const bytes = readFileSync(join('dist', url))
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), revision, `Wrong revision: ${url}`)
 }
-console.log(`Static output verified: title, 151 cards, manifest, fallbacks, ${precachedUrls.length} precache targets`)
-
-const htmlHash = createHash('md5').update(html).digest('hex')
-assert.ok(worker.includes(`url:"index.html",revision:"${htmlHash}"`), 'PWA cache must use the final pre-rendered HTML')
+console.log(`Static output verified: title, 151 cards, manifest, fallbacks, ${entries.length} precache targets`)

@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "postbuild": "node scripts/check-build.mjs"
+    "postbuild": "node scripts/generate-pwa.mjs && node scripts/check-build.mjs && node scripts/check-service-worker.mjs"
   },
   "dependencies": {
     "vue": "^3.5.43"
@@ -34,9 +34,11 @@
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.71.1",
     "vite": "^8.3.2",
-    "vite-plugin-pwa": "^2.0.0",
     "vite-ssg": "^28.3.0",
     "vue-tsc": "^3.3.12"
   },
-  "type": "module"
+  "type": "module",
+  "overrides": {
+    "minimatch": "^11.0.4"
+  }
 }
